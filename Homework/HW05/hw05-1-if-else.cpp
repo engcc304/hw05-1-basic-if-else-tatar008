@@ -11,3 +11,15 @@
     Output:
         Result: D C B A
 */
+#include <stdio.h>
+int main() {
+    char values[4];
+    for (int i = 0; i < 4; i++) {
+        scanf(" %c", &values[i]);
+    }
+    printf("Result: ");
+    for (int i = 3; i >= 0; i--) {
+        printf("%c ", values[i]);
+    }
+    return 0;
+}
